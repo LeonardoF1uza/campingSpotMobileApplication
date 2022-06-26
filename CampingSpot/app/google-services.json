@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "594286703925",
+    "project_id": "campingspot-5037b",
+    "storage_bucket": "campingspot-5037b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594286703925:android:27aeef680ca10efcd6487c",
+        "android_client_info": {
+          "package_name": "com.example.campingspot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "594286703925-2h3botm33mfk649jn9iajijk3klvqmth.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPgSrHtdP8Km57HysnPxMCS8G3vyQs2wM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "594286703925-2h3botm33mfk649jn9iajijk3klvqmth.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

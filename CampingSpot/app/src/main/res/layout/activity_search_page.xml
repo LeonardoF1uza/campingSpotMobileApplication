@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchPage">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="36dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <CheckBox
+                android:id="@+id/name_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Search for name" />
+
+            <LinearLayout
+                android:id="@+id/name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/search_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:text="Activity Name:" />
+
+                <EditText
+                    android:id="@+id/input_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <CheckBox
+                android:id="@+id/location_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Search for location" />
+
+            <LinearLayout
+                android:id="@+id/location_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/search_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:text="Location:" />
+
+                <EditText
+                    android:id="@+id/input_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <CheckBox
+                android:id="@+id/date_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Search for date" />
+
+            <LinearLayout
+                android:id="@+id/date_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/search_since"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Since:  " />
+
+                        <EditText
+                            android:id="@+id/input_initial_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="date|datetime" />
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/search_to"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  To:  " />
+
+                        <EditText
+                            android:id="@+id/input_final_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="date|datetime" />
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <CheckBox
+                android:id="@+id/capacity_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Search for capacity" />
+
+            <LinearLayout
+                android:id="@+id/capacity_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/search_capacity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:text="Capacity:" />
+
+                <EditText
+                    android:id="@+id/input_capacity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/apply_filters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:onClick="clickToApplyFilters"
+                    android:text="Apply Filters" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/button_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:onClick="clickToSearch"
+                    android:text="@string/search" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp">
+
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#707070"
+            android:onClick="clickToHome"
+            app:srcCompat="@drawable/ic_baseline_home_24"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#707070"
+            android:tint="#fff"
+            app:srcCompat="@drawable/search" />
+
+        <ImageButton
+            android:id="@+id/favorites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#707070"
+            android:onClick="clickToHistoric"
+            app:srcCompat="@drawable/ic_baseline_access_time_filled_24" />
+
+        <ImageButton
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#707070"
+            android:onClick="clickToProfile"
+            app:srcCompat="@drawable/ic_baseline_person_24" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

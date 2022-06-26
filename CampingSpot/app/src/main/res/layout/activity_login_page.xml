@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="278dp"
+                android:layout_height="256dp"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                app:srcCompat="@drawable/logo" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1" />
+
+
+            <EditText
+                android:id="@+id/login_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:padding="7dp"
+                android:textColorLink="#000000" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:background="#FDF6F6"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:padding="7dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/register_back"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="clickToBack"
+                    app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <Button
+                    android:id="@+id/login_main"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="#171515"
+                    android:onClick="clickToLogin"
+                    android:text="@string/login"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
